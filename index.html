@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jitta Coding Challenge</title>
+</head>
+<body>
+
+<h1>Jitta Coding Challenge</h1>
+<p>Please check the console for the result.</p>
+
+<script src="jitta-coding-challenge-q1-brute-force.js"></script>
+<script src="jitta-coding-challenge-q1-faster.js"></script>
+<script src="jitta-coding-challenge-q2.js"></script>
+<script>
+
+	const prices = [
+		{ "date": "2021-01-01", "closePrice": 11.00 },
+		{ "date": "2021-01-02", "closePrice": 9.00 },
+		{ "date": "2021-01-03", "closePrice": 11.00 },
+		{ "date": "2021-01-04", "closePrice": 15.00 },
+		{ "date": "2021-01-05", "closePrice": 10.00 },
+		{ "date": "2021-01-06", "closePrice": 12.00 },
+		{ "date": "2021-01-07", "closePrice": 14.00 },
+		{ "date": "2021-01-08", "closePrice": 16.00 },
+	];
+
+	q1MaxProfitBruteForce(prices);
+
+	q1BestProfitRecursive(prices);
+
+	q2MaxProfit(prices);
+
+</script>
+</body>
+</html>
