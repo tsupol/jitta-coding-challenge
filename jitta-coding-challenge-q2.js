@@ -19,9 +19,8 @@ function q2MaxProfit (prices) {
 	const transactions = [];
 
 	for (let i = 1; i < prices.length; i++) {
-		// Check if it is the last one
-		// Or a reversal (checking only the price drop is enough for this question)
-		if (i === prices.length - 1 || prices[i].closePrice > prices[i + 1].closePrice) {
+		// Check if it is the last one or a reversal
+		if (i === prices.length - 1 || (prices[i - 1].closePrice < prices[i].closePrice && prices[i].closePrice > prices[i + 1].closePrice)) {
 			let maxPrice = prices[i].closePrice;
 			let minPrice = prices[i].closePrice;
 			let minIndex = i;
